@@ -1,0 +1,104 @@
+//the font that we used in de pages...
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+$txt-header: #0E68CF;
+//general editions...
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    width: 100%;
+    height: auto;
+}
+
+//here we start with the header...
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    .cont_all{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 180px;
+            height: auto;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            font-size: 1.3em;
+            //the color has to be worked into the rest file...
+            h2{
+                background: $txt-header;
+                background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
+            }
+        }
+        nav{
+            width: 600px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            ul{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+                color: $txt-header;
+                //the color has to be worked into the 
+                //rest file...
+                a{
+                    text-decoration: none;
+                    color: $txt-header;
+                    //the color has to be worked into the 
+                    //rest file...
+                }
+                li{
+                    list-style: none;
+                    font-family: 'Space Grotesk', sans-serif;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    font-size: 1.1em;
+                    cursor: pointer;
+                    padding: 0.5em 0.7em;
+                    border-radius: 0.3em;
+                }
+                //move to rest file... to make the dark mode...
+                li:hover{
+                    border: 0px solid $txt-header;
+                    background-color: #0e68cf3c;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+                }
+                //I have to put the li:hover into the rest file
+                //'cause it is gona has just the color and the
+                //box-shadow...
+                .mode_options{
+                    position: absolute;
+                    top: 70px;
+                    right: 0;
+                    width: 100px;
+                    height: 100px;
+                    flex-direction: column;
+                    //I have to move this to the rest file
+                    //to make well the dark mode...
+                    background-color: white;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.191);
+                }
+            }
+            .mode_options{
+                display: none;
+            }
+        }
+    }
+}
