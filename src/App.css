@@ -46,21 +46,23 @@ header .cont_all nav {
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-header .cont_all nav ul {
+header .cont_all nav .options {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   position: relative;
   color: #0E68CF;
 }
-header .cont_all nav ul a {
+header .cont_all nav .options a {
   text-decoration: none;
   color: #0E68CF;
 }
-header .cont_all nav ul li {
+header .cont_all nav .options li {
   list-style: none;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
@@ -70,23 +72,258 @@ header .cont_all nav ul li {
   padding: 0.5em 0.7em;
   border-radius: 0.3em;
 }
-header .cont_all nav ul li:hover {
+header .cont_all nav .options li:hover {
   border: 0px solid #0E68CF;
   background-color: rgba(14, 104, 207, 0.2352941176);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
 }
-header .cont_all nav ul .mode_options {
+header .cont_all nav .options .mode_options {
   position: absolute;
-  top: 70px;
+  top: 50px;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
-  height: 100px;
-  flex-direction: column;
+  height: 80px;
   background-color: white;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.191);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
 }
-header .cont_all nav .mode_options {
-  display: none;
+header .cont_all nav .options .mode_options li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*Aun falta terminar el boton, hacer el responsive y empezar a darle
+funcionalidad a todo con JS...
+TAMBIEN EL BTN DARK*/
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.main .cont_img {
+  width: 35%;
+  height: 697px;
+  background-image: url("./images/bg-main-desktop.png");
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+.main .white {
+  width: 75%;
+  height: 697px;
+}
+.main .cont_all {
+  position: absolute;
+  width: clamp(310px, 90%, 1130px);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.main .cont_all .cars_cont {
+  width: 500px;
+  height: 515px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .cont_all .cars_cont .front_card_cont {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card {
+  border-radius: 0.5em;
+  width: 420px;
+  height: 245px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./images/bg-card-front.png");
+  background-size: cover;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .circles_cont {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .big_circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  margin-right: 0.5em;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .small_circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .numbersNname {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers {
+  width: 100%;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers h2 {
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .name h4 {
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.main .cont_all .cars_cont .back_card_cont {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.main .cont_all .cars_cont .back_card_cont .back_card {
+  border-radius: 0.5em;
+  width: 420px;
+  height: 245px;
+  background-image: url("./images/bg-card-back.png");
+  background-size: cover;
+  position: relative;
+}
+.main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv {
+  position: absolute;
+  width: auto;
+  top: 110px;
+  right: 25px;
+}
+.main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+}
+.main .cont_all .inputs_cont {
+  width: 50%;
+  height: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .cont_all .inputs_cont form {
+  width: 420px;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.main .cont_all .inputs_cont form label {
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(11, 11, 11);
+  font-weight: 500;
+  font-size: 0.9em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.main .cont_all .inputs_cont form .cont_input_name,
+.main .cont_all .inputs_cont form .cont_input_number {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main .cont_all .inputs_cont form .cont_input_name input,
+.main .cont_all .inputs_cont form .cont_input_number input {
+  width: 100%;
+  border-radius: 0.5em;
+  border: 0.5px solid black;
+  padding: 0.85em 0.8em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgb(11, 11, 11);
+}
+.main .cont_all .inputs_cont form .cont_input_date {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.main .cont_all .inputs_cont form .cont_input_date .date {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .cont_all .inputs_cont form .cont_input_date .date input {
+  width: 45%;
+  border-radius: 0.5em;
+  border: 0.5px solid black;
+  padding: 0.85em 0.8em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgb(11, 11, 11);
+}
+.main .cont_all .inputs_cont form .cont_input_date .date input:first-of-type {
+  margin-right: 0.6em;
+}
+.main .cont_all .inputs_cont form .cont_input_date .cvc {
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main .cont_all .inputs_cont form .cont_input_date .cvc input {
+  width: 100%;
+  border-radius: 0.5em;
+  border: 0.5px solid black;
+  padding: 0.85em 0.8em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgb(11, 11, 11);
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,4 +1,6 @@
 import './App.css';
+import Payment from './components/Payment';
+import { BiSun, BiMoon } from 'react-icons/bi';
 import React, {useState} from 'react';
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
             <h2>Jal Bank</h2>
           </div>
           <nav>
-            <ul>
+            <ul className='options'>
               <a href='#'><li>Contact Us</li></a>
               <a href='#'><li>Other Services</li></a>
               <a href='#'><li>Legal Terms</li></a>
@@ -32,13 +34,14 @@ function App() {
               {/*This will bie appear when the user
               click the item MODE...*/}
               <ul className='mode_options' style={ {display} }>
-                <li className='item'>Dark</li>
-                <li className='item'>Ligth</li>
+                <li className='item'>Dark <BiMoon className='icono' /> </li>
+                <li className='item'>Ligth  <BiSun className='icono' /> </li>
               </ul>
             </ul>
           </nav>
         </div>
       </header>
+      <Payment />
     </div>
   );
 }
