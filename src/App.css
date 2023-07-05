@@ -325,5 +325,144 @@ TAMBIEN EL BTN DARK*/
   letter-spacing: 0.1em;
   color: rgb(11, 11, 11);
 }
+.main .cont_all .inputs_cont form .send {
+  border: none;
+  width: 95%;
+  border-radius: 0.5em;
+  padding: 0.85em 0.8em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+.main .cont_all .inputs_cont form .send:hover {
+  background-color: hsl(279, 6%, 55%);
+  transition: all 500ms ease-out;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(11, 11, 11);
+  color: white;
+}
+footer .cont_cards_nav {
+  border: 1px solid blue;
+  width: 90%;
+  height: auto;
+  padding: 2em 0;
+}
+footer .cont_redes_legal_terms {
+  width: 90%;
+  height: auto;
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .cont_redes_legal_terms .redesNterms {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+footer .cont_redes_legal_terms .redesNterms .legal {
+  width: 600px;
+  height: auto;
+}
+footer .cont_redes_legal_terms .redesNterms .legal p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+footer .cont_redes_legal_terms .redesNterms .legal p span {
+  font-size: 1.6em;
+  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
+}
+footer .cont_redes_legal_terms .redesNterms .redes {
+  width: 35%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .cont_redes_legal_terms .redesNterms .redes ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+footer .cont_redes_legal_terms .redesNterms .redes ul a {
+  text-transform: none;
+  color: white;
+}
+footer .cont_redes_legal_terms .redesNterms .redes ul li {
+  list-style: none;
+  font-size: 1.3em;
+}
+footer .cont_redes_legal_terms .redesNterms .redes ul i:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.775);
+  transition: all 200ms ease-in-out;
+}
+footer .cont_redes_legal_terms .termsNmore {
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+footer .cont_redes_legal_terms .termsNmore .address {
+  width: 620px;
+  height: auto;
+}
+footer .cont_redes_legal_terms .termsNmore .address p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+footer .cont_redes_legal_terms .termsNmore .other_things {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .cont_redes_legal_terms .termsNmore .other_things ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .cont_redes_legal_terms .termsNmore .other_things ul li {
+  list-style: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.729);
+}
 
 /*# sourceMappingURL=App.css.map */

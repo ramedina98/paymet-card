@@ -1,5 +1,6 @@
 //here we have all the payment method...
 import React from 'react'
+import '../App.css';
 
 function Payment() {
     return (

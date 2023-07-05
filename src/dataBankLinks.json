@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1, 
+        "name": "Contact", 
+        "items": [
+            "Chat from the app", 
+            "Help", 
+            "56 90 34 12 69", 
+            "Frequently Asked Questions"
+        ]
+    },
+    {
+        "id": 2, 
+        "name": "Transparency ", 
+        "items": [
+            "Savings protection fund",
+            "Financial Information",
+            "Compensation System", 
+            "SPEI Queries and Clarifications",
+            "Collections",
+            "Jal Bank impact",
+            "Investors"
+        ]
+    },
+    {
+        "id": 3, 
+        "name": "Products", 
+        "items": [
+            "Jal Bank Account",
+            "Jal Bank Credit Card"
+        ]
+    },
+    {
+        "id": 4, 
+        "name": "Browse", 
+        "items": [
+            "Home",
+            "About Nu",
+            "Press",
+            "Blog",
+            "Careers",
+            "Nu Credit Card Agreement",
+            "Terms and Conditions",
+            "Code of Conduct",
+            "Supplier Code of Conduct"
+        ]
+    },
+    {
+        "id": 5, 
+        "name": "Privacy", 
+        "items": [
+            "If you are applying for a vacancy",
+            "If you are applying for a card",
+            "If you already have the card",
+            "If your identity is stolen",
+            "If you provide a service"
+        ]
+    },
+    {
+        "id": 6, 
+        "name": "Regulation", 
+        "items": [
+            "Financial Entities Bureau",
+            "Condusef",
+            "CNBV"
+        ]
+    },
+    {
+        "id": 7, 
+        "name": "Around the world", 
+        "items": [
+            "Brazil",
+            "Colombia",
+            "Argentina"
+        ]
+    }
+]
