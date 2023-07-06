@@ -201,7 +201,7 @@ TAMBIEN EL BTN DARK*/
                                 font-family: $font_txt;
                                 font-size: 1.7em;
                                 letter-spacing: 0.1em;
-                                text-align: center;
+                                text-align: left;
                             }
                         }
                         .name{
@@ -376,10 +376,53 @@ footer{
     color: white;
     .cont_cards_nav{
         //por el momento asi se queda este...
-        border: 1px solid blue;
         width: 90%;
         height: auto;
         padding: 2em 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        //Aqui tenemos lo que consumimos de la api...
+        .contenedor{
+            width: 300px;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            font-family: $font_txt;
+            .title{
+                border-bottom: 2px solid white;
+                width: 100%;
+                height: auto;
+                padding: 1em 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                h2{
+                    letter-spacing: 0.05em;
+                    font-size: 1.2em;
+                }
+            }
+            .info{
+                width: 100%;
+                height: auto;
+                padding: 1em 0;
+                ul{
+                    width: 100%;
+                    height: auto;
+                    li{
+                        list-style: none;
+                        padding: 0.3em 0;
+                    }
+                    li:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                        transition: all 1s ease-in;
+                    }
+                }
+            }
+        }
     }
     .cont_redes_legal_terms{
         width: 90%;
