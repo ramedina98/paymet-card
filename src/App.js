@@ -17,7 +17,10 @@ function App() {
       setDisplay('none')
     }
   }
-
+  const handleDark = (e) => {
+    const clickedItem = e.target;
+    console.log('Se hizo clic en:', clickedItem.textContent);
+  }
   return (
     <div className="App">
       <header>
@@ -35,7 +38,7 @@ function App() {
               </li>
               {/*This will bie appear when the user
               click the item MODE...*/}
-              <ul className='mode_options' style={ {display} }>
+              <ul className='mode_options' style={ {display} } onClick={handleDark}>
                 <li className='item'>Dark <BiMoon className='icono' /> </li>
                 <li className='item'>Ligth  <BiSun className='icono' /> </li>
               </ul>
