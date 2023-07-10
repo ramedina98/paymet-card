@@ -1,4 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+/*here we have the variables of colors that will help us
+to switch dark to ligth and ligth to dark...*/
+#Ligth {
+  /*Aun falta terminar el boton, hacer el responsive y empezar a darle
+  funcionalidad a todo con JS...
+  TAMBIEN EL BTN DARK*/
+}
+#Ligth header {
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#Ligth header .cont_all .logo h2 {
+  background: #0E68CF;
+  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+#Ligth header .cont_all nav .options {
+  color: #0E68CF;
+}
+#Ligth header .cont_all nav .options a {
+  color: #0E68CF;
+}
+#Ligth header .cont_all nav .options li:hover {
+  border: 0px solid #0E68CF;
+  background-color: rgba(14, 104, 207, 0.2352941176);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+}
+#Ligth header .cont_all nav .options .mode_options {
+  background-color: white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
+}
+#Ligth .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .big_circle {
+  background-color: white;
+}
+#Ligth .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .small_circle {
+  border: 1px solid white;
+}
+#Ligth .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers {
+  width: 100%;
+}
+#Ligth .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers h2 {
+  color: white;
+}
+#Ligth .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .name h4 {
+  color: white;
+}
+#Ligth .main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv p {
+  color: white;
+}
+#Ligth .main .cont_all .inputs_cont form label {
+  color: rgb(11, 11, 11);
+}
+#Ligth .main .cont_all .inputs_cont form .cont_input_name input,
+#Ligth .main .cont_all .inputs_cont form .cont_input_number input {
+  border: 0.5px solid black;
+  color: rgb(11, 11, 11);
+}
+#Ligth .main .cont_all .inputs_cont form .cont_input_name .error,
+#Ligth .main .cont_all .inputs_cont form .cont_input_number .error {
+  background-color: red;
+}
+#Ligth .main .cont_all .inputs_cont form .cont_input_date .date input {
+  border: 0.5px solid black;
+  color: rgb(11, 11, 11);
+}
+#Ligth .main .cont_all .inputs_cont form .cont_input_date .date .error {
+  background-color: red;
+}
+#Ligth .main .cont_all .inputs_cont form .cont_input_date .cvc input {
+  border: 0.5px solid black;
+  color: rgb(11, 11, 11);
+}
+#Ligth .main .cont_all .inputs_cont form .cont_input_date .cvc .error {
+  background-color: red;
+}
+#Ligth .main .cont_all .inputs_cont form .send {
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+}
+#Ligth .main .cont_all .inputs_cont form .send:hover {
+  background-color: hsl(279, 6%, 55%);
+}
+#Ligth .main .cont_all .father_cont_thanks .cont_thanks .cont_txt_thanks p {
+  color: rgba(166, 166, 166, 0.912);
+}
+#Ligth .main .cont_all .father_cont_thanks .cont_thanks button {
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+#Ligth .main .cont_all .father_cont_thanks .cont_thanks button:hover {
+  background-color: hsl(279, 6%, 55%);
+  transition: all 500ms ease-out;
+}
+#Ligth footer {
+  background: rgb(11, 11, 11);
+  color: white;
+}
+#Ligth footer .cont_cards_nav .contenedor .title {
+  border-bottom: 2px solid white;
+}
+#Ligth footer .cont_redes_legal_terms .redesNterms .legal p span {
+  font-size: 1.6em;
+  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
+}
+#Ligth footer .cont_redes_legal_terms .redesNterms .redes ul a {
+  color: white;
+}
+#Ligth footer .cont_redes_legal_terms .redesNterms .redes ul i:hover {
+  color: rgba(255, 255, 255, 0.775);
+}
+#Ligth footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
+  color: rgba(255, 255, 255, 0.729);
+}
+
+#Dark {
+  /*Aun falta terminar el boton, hacer el responsive y empezar a darle
+  funcionalidad a todo con JS...
+  TAMBIEN EL BTN DARK*/
+}
+#Dark header {
+  background-color: rgba(11, 11, 11, 0.954);
+  box-shadow: 0px 1px 5px rgba(250, 250, 250, 0.26);
+}
+#Dark header .cont_all .logo h2 {
+  background: #3884dc;
+  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+#Dark header .cont_all nav .options {
+  color: #3884dc;
+}
+#Dark header .cont_all nav .options a {
+  color: #3884dc;
+}
+#Dark header .cont_all nav .options li:hover {
+  border: 0px solid #3884dc;
+  background-color: rgba(14, 104, 207, 0.2352941176);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+}
+#Dark header .cont_all nav .options .mode_options {
+  background-color: rgb(27, 27, 27);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
+}
+#Dark .main {
+  background-color: rgb(27, 27, 27);
+}
+#Dark .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .big_circle {
+  background-color: white;
+}
+#Dark .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .small_circle {
+  border: 1px solid white;
+}
+#Dark .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers {
+  width: 100%;
+}
+#Dark .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers h2 {
+  color: white;
+}
+#Dark .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .name h4 {
+  color: white;
+}
+#Dark .main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv p {
+  color: white;
+}
+#Dark .main .cont_all .inputs_cont form label {
+  color: white;
+}
+#Dark .main .cont_all .inputs_cont form .cont_input_name input,
+#Dark .main .cont_all .inputs_cont form .cont_input_number input {
+  border: 0.5px solid white;
+  color: white;
+  background-color: rgba(30, 30, 30, 0.615);
+}
+#Dark .main .cont_all .inputs_cont form .cont_input_name .error,
+#Dark .main .cont_all .inputs_cont form .cont_input_number .error {
+  background-color: red;
+}
+#Dark .main .cont_all .inputs_cont form .cont_input_date .date input {
+  border: 0.5px solid white;
+  color: white;
+  background-color: rgba(30, 30, 30, 0.615);
+}
+#Dark .main .cont_all .inputs_cont form .cont_input_date .date .error {
+  background-color: red;
+}
+#Dark .main .cont_all .inputs_cont form .cont_input_date .cvc input {
+  border: 0.5px solid white;
+  color: white;
+  background-color: rgba(30, 30, 30, 0.615);
+}
+#Dark .main .cont_all .inputs_cont form .cont_input_date .cvc .error {
+  background-color: red;
+}
+#Dark .main .cont_all .inputs_cont form .send {
+  color: white;
+  background-color: hsl(278, 82%, 57%);
+}
+#Dark .main .cont_all .inputs_cont form .send:hover {
+  background-color: hsl(279, 24%, 35%);
+}
+#Dark .main .cont_all .father_cont_thanks .cont_thanks .cont_txt_thanks h2 {
+  color: white;
+}
+#Dark .main .cont_all .father_cont_thanks .cont_thanks .cont_txt_thanks p {
+  color: white;
+}
+#Dark .main .cont_all .father_cont_thanks .cont_thanks button {
+  color: white;
+  background-color: hsl(278, 82%, 57%);
+  cursor: pointer;
+}
+#Dark .main .cont_all .father_cont_thanks .cont_thanks button:hover {
+  background-color: hsl(279, 24%, 35%);
+  transition: all 500ms ease-out;
+}
+#Dark footer {
+  background: rgb(11, 11, 11);
+  color: white;
+}
+#Dark footer .cont_cards_nav .contenedor .title {
+  border-bottom: 2px solid white;
+}
+#Dark footer .cont_redes_legal_terms .redesNterms .legal p span {
+  font-size: 1.6em;
+  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
+}
+#Dark footer .cont_redes_legal_terms .redesNterms .redes ul a {
+  color: white;
+}
+#Dark footer .cont_redes_legal_terms .redesNterms .redes ul i:hover {
+  color: rgba(255, 255, 255, 0.775);
+}
+#Dark footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
+  color: rgba(255, 255, 255, 0.729);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,7 +264,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 header .cont_all {
   width: 90%;
@@ -35,10 +281,6 @@ header .cont_all .logo {
   font-size: 1.3em;
 }
 header .cont_all .logo h2 {
-  background: #0E68CF;
-  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 header .cont_all nav {
@@ -56,11 +298,9 @@ header .cont_all nav .options {
   align-items: center;
   flex-direction: row;
   position: relative;
-  color: #0E68CF;
 }
 header .cont_all nav .options a {
   text-decoration: none;
-  color: #0E68CF;
 }
 header .cont_all nav .options li {
   list-style: none;
@@ -72,11 +312,6 @@ header .cont_all nav .options li {
   padding: 0.5em 0.7em;
   border-radius: 0.3em;
 }
-header .cont_all nav .options li:hover {
-  border: 0px solid #0E68CF;
-  background-color: rgba(14, 104, 207, 0.2352941176);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
-}
 header .cont_all nav .options .mode_options {
   position: absolute;
   top: 50px;
@@ -86,8 +321,6 @@ header .cont_all nav .options .mode_options {
   justify-content: center;
   width: 100px;
   height: 80px;
-  background-color: white;
-  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
 }
 header .cont_all nav .options .mode_options li {
   display: flex;
@@ -164,14 +397,12 @@ TAMBIEN EL BTN DARK*/
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-color: white;
   margin-right: 0.5em;
 }
 .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .small_circle {
   width: 25px;
   height: 25px;
   border-radius: 50px;
-  border: 1px solid white;
 }
 .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname {
   width: 90%;
@@ -185,7 +416,6 @@ TAMBIEN EL BTN DARK*/
   width: 100%;
 }
 .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers h2 {
-  color: white;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.7em;
   letter-spacing: 0.1em;
@@ -201,7 +431,6 @@ TAMBIEN EL BTN DARK*/
 }
 .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .name h4 {
   font-family: "Space Grotesk", sans-serif;
-  color: white;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -230,7 +459,6 @@ TAMBIEN EL BTN DARK*/
 .main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv p {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  color: white;
   font-size: 1.1em;
   letter-spacing: 0.1em;
 }
@@ -251,7 +479,6 @@ TAMBIEN EL BTN DARK*/
 }
 .main .cont_all .inputs_cont form label {
   font-family: "Space Grotesk", sans-serif;
-  color: rgb(11, 11, 11);
   font-weight: 500;
   font-size: 0.9em;
   letter-spacing: 0.06em;
@@ -270,13 +497,11 @@ TAMBIEN EL BTN DARK*/
 .main .cont_all .inputs_cont form .cont_input_number input {
   width: 100%;
   border-radius: 0.5em;
-  border: 0.5px solid black;
   padding: 0.85em 0.8em;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.1em;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: rgb(11, 11, 11);
 }
 .main .cont_all .inputs_cont form .cont_input_name .error,
 .main .cont_all .inputs_cont form .cont_input_number .error {
@@ -349,7 +574,6 @@ TAMBIEN EL BTN DARK*/
   cursor: pointer;
 }
 .main .cont_all .inputs_cont form .send:hover {
-  background-color: hsl(279, 6%, 55%);
   transition: all 500ms ease-out;
 }
 .main .cont_all .father_cont_thanks {
@@ -391,7 +615,6 @@ TAMBIEN EL BTN DARK*/
 .main .cont_all .father_cont_thanks .cont_thanks .cont_txt_thanks p {
   font-size: 0.95em;
   font-weight: 700;
-  color: rgba(166, 166, 166, 0.912);
 }
 .main .cont_all .father_cont_thanks .cont_thanks button {
   border: none;
@@ -402,12 +625,9 @@ TAMBIEN EL BTN DARK*/
   font-size: 1.15em;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: white;
-  background-color: hsl(278, 68%, 11%);
   cursor: pointer;
 }
 .main .cont_all .father_cont_thanks .cont_thanks button:hover {
-  background-color: hsl(279, 6%, 55%);
   transition: all 500ms ease-out;
 }
 
@@ -416,8 +636,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgb(11, 11, 11);
-  color: white;
 }
 footer .cont_cards_nav {
   width: 90%;
@@ -437,7 +655,6 @@ footer .cont_cards_nav .contenedor {
   font-family: "Space Grotesk", sans-serif;
 }
 footer .cont_cards_nav .contenedor .title {
-  border-bottom: 2px solid white;
   width: 100%;
   height: auto;
   padding: 1em 0;
@@ -498,10 +715,6 @@ footer .cont_redes_legal_terms .redesNterms .legal p {
 }
 footer .cont_redes_legal_terms .redesNterms .legal p span {
   font-size: 1.6em;
-  background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
 }
 footer .cont_redes_legal_terms .redesNterms .redes {
   width: 35%;
@@ -519,7 +732,6 @@ footer .cont_redes_legal_terms .redesNterms .redes ul {
 }
 footer .cont_redes_legal_terms .redesNterms .redes ul a {
   text-transform: none;
-  color: white;
 }
 footer .cont_redes_legal_terms .redesNterms .redes ul li {
   list-style: none;
@@ -527,7 +739,6 @@ footer .cont_redes_legal_terms .redesNterms .redes ul li {
 }
 footer .cont_redes_legal_terms .redesNterms .redes ul i:hover {
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.775);
   transition: all 200ms ease-in-out;
 }
 footer .cont_redes_legal_terms .termsNmore {
@@ -572,7 +783,6 @@ footer .cont_redes_legal_terms .termsNmore .other_things ul li {
 footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: rgba(255, 255, 255, 0.729);
 }
 
 /*# sourceMappingURL=App.css.map */

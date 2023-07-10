@@ -1,3 +1,4 @@
+@use './reset/rest'; 
 //the font that we used in de pages...
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 $txt-header: #0E68CF;
@@ -24,7 +25,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     .cont_all{
         width: 90%;
         height: 100%;
@@ -40,10 +40,6 @@ header{
             font-size: 1.3em;
             //the color has to be worked into the rest file...
             h2{
-                background: $txt-header;
-                background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 cursor: pointer;
             }
         }
@@ -61,12 +57,10 @@ header{
                 align-items: center;
                 flex-direction: row;
                 position: relative;
-                color: $txt-header;
                 //the color has to be worked into the 
                 //rest file...
                 a{
                     text-decoration: none;
-                    color: $txt-header;
                     //the color has to be worked into the 
                     //rest file...
                 }
@@ -81,11 +75,6 @@ header{
                     border-radius: 0.3em;
                 }
                 //move to rest file... to make the dark mode...
-                li:hover{
-                    border: 0px solid $txt-header;
-                    background-color: #0e68cf3c;
-                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
-                }
                 //I have to put the li:hover into the rest file
                 //'cause it is gona has just the color and the
                 //box-shadow...
@@ -98,10 +87,6 @@ header{
                     justify-content: center;
                     width: 100px;
                     height: 80px;
-                    //I have to move this to the rest file
-                    //to make well the dark mode...
-                    background-color: white;
-                    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
                     li{
                         display: flex;
                         justify-content: space-evenly;
@@ -177,14 +162,12 @@ TAMBIEN EL BTN DARK*/
                             width: 50px;
                             height: 50px;
                             border-radius: 50px;
-                            background-color: white;
                             margin-right: 0.5em;
                         }
                         .small_circle{
                             width: 25px;
                             height: 25px;
                             border-radius: 50px;
-                            border: 1px solid white;
                         }
                     }
                     .numbersNname{
@@ -197,7 +180,6 @@ TAMBIEN EL BTN DARK*/
                         .numbers{
                             width: 100%;
                             h2{
-                                color: white;
                                 font-family: $font_txt;
                                 font-size: 1.7em;
                                 letter-spacing: 0.1em;
@@ -213,7 +195,6 @@ TAMBIEN EL BTN DARK*/
                             margin-top: 1em;
                             h4{
                                 font-family: $font_txt;
-                                color: white;
                                 font-size: 1em;
                                 text-transform: uppercase;
                                 letter-spacing: 0.05em;
@@ -243,7 +224,6 @@ TAMBIEN EL BTN DARK*/
                         p{
                             font-family: $font_txt;
                             font-weight: 700;
-                            color: white;
                             font-size: 1.1em;
                             letter-spacing: 0.1em;
                         }
@@ -267,7 +247,6 @@ TAMBIEN EL BTN DARK*/
                 label{
                     font-family: $font_txt;
                     //el color se cambiara en el reset file...
-                    color: $txt-color;
                     font-weight: 500;
                     font-size: 0.9em;
                     letter-spacing: 0.06em;
@@ -284,14 +263,11 @@ TAMBIEN EL BTN DARK*/
                     input{
                         width: 100%;
                         border-radius: 0.5em;
-                        border: 0.5px solid black;
                         padding: 0.85em 0.8em;
                         font-family: $font_txt;
                         font-size: 1.1em;
                         font-weight: 700;
                         letter-spacing: 0.1em;
-                        //el color se cambiara en el reset... 
-                        color: $txt-color;
                     }
                     .error{
                         background-color: red;
@@ -367,7 +343,6 @@ TAMBIEN EL BTN DARK*/
                     cursor: pointer;
                 }
                 .send:hover{
-                    background-color: $back_btn_hover;
                     transition: all 500ms ease-out;
                 }
             }
@@ -408,7 +383,6 @@ TAMBIEN EL BTN DARK*/
                     p{
                         font-size: .95em;
                         font-weight: 700;
-                        color: rgba(166, 166, 166, 0.912);
                     }
                 }
                 button{
@@ -420,13 +394,9 @@ TAMBIEN EL BTN DARK*/
                     font-size: 1.15em;
                     font-weight: 700;
                     letter-spacing: 0.1em;
-                    //el color se cambiara en el reset... 
-                    color: white;
-                    background-color: $back_btn;
                     cursor: pointer;
                 }
                 button:hover{
-                    background-color: $back_btn_hover;
                     transition: all 500ms ease-out;
                 }
             }
@@ -440,8 +410,6 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: $txt-color;
-    color: white;
     .cont_cards_nav{
         //por el momento asi se queda este...
         width: 90%;
@@ -460,7 +428,6 @@ footer{
             flex-direction: column;
             font-family: $font_txt;
             .title{
-                border-bottom: 2px solid white;
                 width: 100%;
                 height: auto;
                 padding: 1em 0;
@@ -519,10 +486,6 @@ footer{
                     line-height: 1.4;
                     span{
                         font-size: 1.6em;
-                        background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
                     }
                 }
             }
@@ -540,7 +503,6 @@ footer{
                     flex-direction: row;
                     a{
                         text-transform: none;
-                        color: white;
                     }
                     li{
                         list-style: none;
@@ -548,7 +510,6 @@ footer{
                     }
                     i:hover{
                         cursor: pointer;
-                        color: rgba(255, 255, 255, 0.775);
                         transition: all 200ms ease-in-out;
                     }
                 }
@@ -593,7 +554,6 @@ footer{
                     li:hover{
                         cursor: pointer;
                         text-decoration: underline;
-                        color: rgba(255, 255, 255, 0.729);
                     }
                 }
             }

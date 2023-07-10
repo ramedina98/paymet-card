@@ -8,6 +8,7 @@ import React, {useState} from 'react';
 function App() {
   //hook to chences from display = none to displa = block...
   const [display, setDisplay] = useState('none');
+  const [btn, sentBtn] = useState('Ligth');
   //we check the state of the display to send the 
   //necesari comand...
   const handleClick = () => {
@@ -17,12 +18,12 @@ function App() {
       setDisplay('none')
     }
   }
-  const handleDark = (e) => {
-    const clickedItem = e.target;
-    console.log('Se hizo clic en:', clickedItem.textContent);
+  const handleDark = (e, clickedItem) => {
+    console.log("Boton click: " + clickedItem);
+    sentBtn(clickedItem);
   }
   return (
-    <div className="App">
+    <div className="App dark" id={btn}>
       <header>
         <div className='cont_all'>
           <div className='logo'>
@@ -38,9 +39,9 @@ function App() {
               </li>
               {/*This will bie appear when the user
               click the item MODE...*/}
-              <ul className='mode_options' style={ {display} } onClick={handleDark}>
-                <li className='item'>Dark <BiMoon className='icono' /> </li>
-                <li className='item'>Ligth  <BiSun className='icono' /> </li>
+              <ul className='mode_options' style={ {display} }>
+                <li className='item' name='Dark' onClick={(e) => handleDark(e, 'Dark')}>Dark <BiMoon className='icono' /> </li>
+                <li className='item' name='Ligth' onClick={(e) => handleDark(e, 'Ligth')}>Ligth  <BiSun className='icono' /> </li>
               </ul>
             </ul>
           </nav>

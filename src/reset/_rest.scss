@@ -1,0 +1,425 @@
+@use '../colors/colors.scss' as *;  
+
+//ligth
+#Ligth{
+    //here we start with the header...
+    header{
+        background-color: $element-ligth;
+        box-shadow: $box-shadow-ligth;
+        .cont_all{
+            .logo{
+                //the color has to be worked into the rest file...
+                h2{
+                    background: $txt-header-ligth;
+                    background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            nav{
+                .options{
+                    color: $txt-header-ligth;
+                    //the color has to be worked into the 
+                    //rest file...
+                    a{
+                        color: $txt-header-ligth;
+                        //the color has to be worked into the 
+                        //rest file...
+                    }
+                    //move to rest file... to make the dark mode...
+                    li:hover{
+                        border: 0px solid $txt-header-ligth;
+                        background-color: #0e68cf3c;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+                    }
+                    //I have to put the li:hover into the rest file
+                    //'cause it is gona has just the color and the
+                    //box-shadow...
+                    .mode_options{
+                        //I have to move this to the rest file
+                        //to make well the dark mode...
+                        background-color: white;
+                        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
+                    }
+                }
+            }
+        }
+    }
+
+    //here we have the component...
+    /*Aun falta terminar el boton, hacer el responsive y empezar a darle
+    funcionalidad a todo con JS...
+    TAMBIEN EL BTN DARK*/
+    .main{
+        .cont_all{
+            .cars_cont{
+                .front_card_cont{
+                    .front_card{
+                        .circles_cont{
+                            .big_circle{
+                                background-color: white;
+                            }
+                            .small_circle{
+                                border: 1px solid white;
+                            }
+                        }
+                        .numbersNname{
+                            .numbers{
+                                width: 100%;
+                                h2{
+                                    color: white;
+                                }
+                            }
+                            .name{
+                                h4{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .back_card_cont{
+                    .back_card{
+                        .cont_cuv{
+                            p{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .inputs_cont{
+                form{
+                    label{
+                        //el color se cambiara en el reset file...
+                        color: $txt-color-ligth;
+                    }
+                    .cont_input_name,
+                    .cont_input_number{
+                        input{
+                            border: 0.5px solid black;
+                            //el color se cambiara en el reset... 
+                            color: $txt-color-ligth;
+                        }
+                        .error{
+                            background-color: red;
+                        }
+                    }
+                    .cont_input_date{
+                        .date{
+                            input{
+                                border: 0.5px solid black;
+                                //el color se cambiara en el reset... 
+                                color: $txt-color-ligth;
+                            }
+                            .error{
+                                background-color: red;
+                            }
+                        }
+                        .cvc{
+                            input{
+                                border: 0.5px solid black;
+                                //el color se cambiara en el reset... 
+                                color: $txt-color-ligth;
+                            }
+                            .error{
+                                background-color: red;
+                            }
+                        }
+                    }
+                    .send{
+                        //el color se cambiara en el reset... 
+                        color: white;
+                        background-color: $back_btn-ligth;
+                    }
+                    .send:hover{
+                        background-color: $back_btn_hover-ligth;
+                    }
+                }
+            }
+            .father_cont_thanks{
+                .cont_thanks{
+                    .cont_txt_thanks{
+                        p{
+                            color: rgba(166, 166, 166, 0.912);
+                        }
+                    }
+                    button{
+                        //el color se cambiara en el reset... 
+                        color: white;
+                        background-color: $back_btn-ligth;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background-color: $back_btn_hover-ligth;
+                        transition: all 500ms ease-out;
+                    }
+                }
+            }
+        }
+    }
+
+    //footer...
+    footer{
+        background: $txt-color-ligth;
+        color: white;
+        .cont_cards_nav{
+            //Aqui tenemos lo que consumimos de la api...
+            .contenedor{
+                .title{
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+        .cont_redes_legal_terms{
+            .redesNterms{
+                .legal{
+                    p{
+                        span{
+                            font-size: 1.6em;
+                            background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
+                        }
+                    }
+                }
+                .redes{
+                    ul{
+                        a{
+                            color: white;
+                        }
+                        i:hover{
+                            color: rgba(255, 255, 255, 0.775);
+                        }
+                    }
+                }
+            }
+            .termsNmore{
+                .other_things{
+                    ul{
+                        li:hover{
+                            color: rgba(255, 255, 255, 0.729);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Dark{
+    //here we start with the header...
+    header{
+        background-color: $element-dark;
+        box-shadow: $box-shadow-dark;
+        .cont_all{
+            .logo{
+                //the color has to be worked into the rest file...
+                h2{
+                    background: $txt-header-dark;
+                    background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            nav{
+                .options{
+                    color: $txt-header-dark;
+                    //the color has to be worked into the 
+                    //rest file...
+                    a{
+                        color: $txt-header-dark;
+                        //the color has to be worked into the 
+                        //rest file...
+                    }
+                    //move to rest file... to make the dark mode...
+                    li:hover{
+                        border: 0px solid $txt-header-dark;
+                        background-color: #0e68cf3c;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+                    }
+                    //I have to put the li:hover into the rest file
+                    //'cause it is gona has just the color and the
+                    //box-shadow...
+                    .mode_options{
+                        //I have to move this to the rest file
+                        //to make well the dark mode...
+                        background-color: $otherElement-dark;
+                        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
+                    }
+                }
+            }
+        }
+    }
+
+    //here we have the component...
+    /*Aun falta terminar el boton, hacer el responsive y empezar a darle
+    funcionalidad a todo con JS...
+    TAMBIEN EL BTN DARK*/
+    .main{
+        background-color: $otherElement-dark;
+        .cont_all{
+            .cars_cont{
+                .front_card_cont{
+                    .front_card{
+                        .circles_cont{
+                            .big_circle{
+                                background-color: white;
+                            }
+                            .small_circle{
+                                border: 1px solid white;
+                            }
+                        }
+                        .numbersNname{
+                            .numbers{
+                                width: 100%;
+                                h2{
+                                    color: white;
+                                }
+                            }
+                            .name{
+                                h4{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .back_card_cont{
+                    .back_card{
+                        .cont_cuv{
+                            p{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .inputs_cont{
+                form{
+                    label{
+                        //el color se cambiara en el reset file...
+                        color: $txt-color-dark;
+                    }
+                    .cont_input_name,
+                    .cont_input_number{
+                        input{
+                            border: 0.5px solid white;
+                            //el color se cambiara en el reset... 
+                            color: $txt-color-dark;
+                            background-color: rgba(30, 30, 30, 0.615);
+                        }
+                        .error{
+                            background-color: red;
+                        }
+                    }
+                    .cont_input_date{
+                        .date{
+                            input{
+                                border: 0.5px solid white;
+                                //el color se cambiara en el reset... 
+                                color: $txt-color-dark;
+                                background-color: rgba(30, 30, 30, 0.615);
+                            }
+                            .error{
+                                background-color: red;
+                            }
+                        }
+                        .cvc{
+                            input{
+                                border: 0.5px solid white;
+                                //el color se cambiara en el reset... 
+                                color: $txt-color-dark;
+                                background-color: rgba(30, 30, 30, 0.615);
+                            }
+                            .error{
+                                background-color: red;
+                            }
+                        }
+                    }
+                    .send{
+                        //el color se cambiara en el reset... 
+                        color: white;
+                        background-color: $back_btn-dark;
+                    }
+                    .send:hover{
+                        background-color: $back_btn_hover-dark;
+                    }
+                }
+            }
+            .father_cont_thanks{
+                .cont_thanks{
+                    .cont_txt_thanks{
+                        h2{
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                    button{
+                        //el color se cambiara en el reset... 
+                        color: white;
+                        background-color: $back_btn-dark;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background-color: $back_btn_hover-dark;
+                        transition: all 500ms ease-out;
+                    }
+                }
+            }
+        }
+    }
+
+    //footer...
+    footer{
+        background: $txt-color-ligth;
+        color: white;
+        .cont_cards_nav{
+            //Aqui tenemos lo que consumimos de la api...
+            .contenedor{
+                .title{
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+        .cont_redes_legal_terms{
+            .redesNterms{
+                .legal{
+                    p{
+                        span{
+                            font-size: 1.6em;
+                            background: linear-gradient(to right, #0E68CF 0%, #23538A 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.157);
+                        }
+                    }
+                }
+                .redes{
+                    ul{
+                        a{
+                            color: white;
+                        }
+                        i:hover{
+                            color: rgba(255, 255, 255, 0.775);
+                        }
+                    }
+                }
+            }
+            .termsNmore{
+                .other_things{
+                    ul{
+                        li:hover{
+                            color: rgba(255, 255, 255, 0.729);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
