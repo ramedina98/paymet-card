@@ -975,6 +975,9 @@ footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
     color: rgba(17, 17, 17, 0.734);
     transition: all 500ms ease-in-out;
   }
+  .main .cont_all .father_cont_thanks {
+    width: 100%;
+  }
   .options_side {
     display: none;
     flex-direction: column;

@@ -707,7 +707,13 @@ footer{
             }
         }
     }
-
+    .main{
+        .cont_all{
+            .father_cont_thanks{
+                width: 100%;
+            }
+        }
+    }
     .options_side{
         display: none;
         flex-direction: column;
