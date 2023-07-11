@@ -9,6 +9,7 @@ function App() {
   //hook to chences from display = none to displa = block...
   const [display, setDisplay] = useState('none');
   const [btn, sentBtn] = useState('Ligth');
+  const [menu, setMenu] = useState('none');
   //we check the state of the display to send the 
   //necesari comand...
   const handleClick = () => {
@@ -21,6 +22,15 @@ function App() {
   const handleDark = (e, clickedItem) => {
     console.log("Boton click: " + clickedItem);
     sentBtn(clickedItem);
+  }
+
+  //this function is to open-close the burger menu...
+  const handleMenuBurger = () => {
+    setMenu('flex');
+  }
+  const close = () => {
+    setMenu('none');
+    setDisplay('none');
   }
   return (
     <div className="App dark" id={btn}>
@@ -45,8 +55,28 @@ function App() {
               </ul>
             </ul>
           </nav>
+          <div className='hamburguer_menu'>
+            <span className="material-icons" onClick={handleMenuBurger}>menu</span>
+          </div>
         </div>
       </header>
+      <ul className='options_side' style={{ display: menu }}>
+        <div className='closeMenu' onClick={close}>
+          X
+        </div>
+        <a href='#'><li>About Us</li></a>
+        <a href='#'><li>Other Services</li></a>
+        <a href='#'><li>Legal Terms</li></a>
+        <li className='mode' onClick={handleClick}>
+          Mode
+        </li>
+        {/*This will bie appear when the user
+        click the item MODE...*/}
+        <ul className='mode_options' style={ {display} }>
+          <li className='item' name='Dark' onClick={(e) => handleDark(e, 'Dark')}>Dark <BiMoon className='icono' /> </li>
+          <li className='item' name='Ligth' onClick={(e) => handleDark(e, 'Ligth')}>Ligth  <BiSun className='icono' /> </li>
+        </ul>
+      </ul>
       <Payment />
       {/*Vo a hacer otro componente el cual va a consumir
       recursos de una api en la cual se encuentra el titulo 

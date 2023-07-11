@@ -32,6 +32,36 @@ to switch dark to ligth and ligth to dark...*/
   background-color: white;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
 }
+#Ligth .options_side {
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#Ligth .options_side .closeMenu {
+  color: rgb(11, 11, 11);
+  text-shadow: 0px 1px 5px rgba(91, 178, 240, 0.426);
+}
+#Ligth .options_side a {
+  color: rgb(11, 11, 11);
+}
+#Ligth .options_side a li:hover {
+  border: 0px solid #0E68CF;
+  background-color: rgba(14, 104, 207, 0.2352941176);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+}
+#Ligth .options_side li {
+  color: rgb(11, 11, 11);
+}
+#Ligth .options_side li:hover {
+  border: 0px solid #0E68CF;
+  background-color: rgba(14, 104, 207, 0.2352941176);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+}
+#Ligth .options_side .mode_options {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#Ligth .options_side .mode_options li {
+  color: rgb(11, 11, 11);
+}
 #Ligth .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .big_circle {
   background-color: white;
 }
@@ -150,6 +180,42 @@ to switch dark to ligth and ligth to dark...*/
   background-color: rgb(27, 27, 27);
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.235);
 }
+#Dark header .cont_all .hamburguer_menu .material-icons {
+  color: white;
+}
+#Dark header .cont_all .hamburguer_menu .material-icons:hover {
+  color: rgba(255, 255, 255, 0.734);
+}
+#Dark .options_side {
+  background-color: rgba(11, 11, 11, 0.954);
+  box-shadow: 0px 1px 5px rgba(250, 250, 250, 0.26);
+}
+#Dark .options_side .closeMenu {
+  color: white;
+  text-shadow: 0px 1px 5px rgba(240, 235, 91, 0.426);
+}
+#Dark .options_side a {
+  color: white;
+}
+#Dark .options_side a li:hover {
+  border: 0px solid #3884dc;
+  background-color: rgba(14, 104, 207, 0.2352941176);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+}
+#Dark .options_side li {
+  color: white;
+}
+#Dark .options_side li:hover {
+  border: 0px solid #3884dc;
+  background-color: rgba(14, 104, 207, 0.2352941176);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+}
+#Dark .options_side .mode_options {
+  box-shadow: 0px 1px 5px rgba(250, 250, 250, 0.26);
+}
+#Dark .options_side .mode_options li {
+  color: white;
+}
 #Dark .main {
   background-color: rgb(27, 27, 27);
 }
@@ -256,6 +322,7 @@ html,
 body {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 header {
@@ -326,6 +393,13 @@ header .cont_all nav .options .mode_options li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+header .cont_all .hamburguer_menu {
+  display: none;
+}
+
+.options_side {
+  display: none;
 }
 
 /*Aun falta terminar el boton, hacer el responsive y empezar a darle
@@ -783,6 +857,229 @@ footer .cont_redes_legal_terms .termsNmore .other_things ul li {
 footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/*Aqui tenemos todo el responsive...*/
+@media screen and (max-width: 939px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .cont_img {
+    width: 100%;
+    height: 240px;
+    background-image: url("./images/bg-main-mobile.png  ");
+  }
+  .main .white {
+    width: 100%;
+    height: 897px;
+  }
+  .main .cont_all {
+    height: 960px;
+    flex-direction: column;
+  }
+  .main .cont_all .cars_cont {
+    width: 85%;
+    height: auto;
+  }
+  .main .cont_all .cars_cont .front_card_cont .front_card {
+    border-radius: 0.5em;
+    width: 420px;
+    height: 245px;
+  }
+  .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .big_circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 0.5em;
+  }
+  .main .cont_all .cars_cont .front_card_cont .front_card .circles_cont .small_circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+  }
+  .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .numbers h2 {
+    font-size: 1.3em;
+  }
+  .main .cont_all .cars_cont .front_card_cont .front_card .numbersNname .name h4 {
+    font-size: 0.8em;
+  }
+  .main .cont_all .cars_cont .back_card_cont {
+    margin-top: 0.5em;
+  }
+  .main .cont_all .cars_cont .back_card_cont .back_card {
+    border-radius: 0.5em;
+    width: 420px;
+    height: 245px;
+  }
+  .main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv {
+    top: 110px;
+    right: 38px;
+  }
+  .main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv p {
+    font-size: 0.95em;
+  }
+  .main .cont_all .inputs_cont {
+    width: 90%;
+  }
+  .main .cont_all .inputs_cont form {
+    width: 420px;
+    height: 90%;
+  }
+  .main .cont_all .inputs_cont form .cont_input_name,
+  .main .cont_all .inputs_cont form .cont_input_number {
+    width: 100%;
+  }
+  .main .cont_all .inputs_cont form .cont_input_date {
+    width: 100%;
+  }
+  .main .cont_all .inputs_cont form .send {
+    width: 100%;
+  }
+  footer .cont_redes_legal_terms .redesNterms {
+    flex-direction: column;
+  }
+  footer .cont_redes_legal_terms .redesNterms .legal {
+    width: 90%;
+  }
+  footer .cont_redes_legal_terms .redesNterms .redes {
+    margin-top: 1em;
+    width: 55%;
+  }
+  footer .cont_redes_legal_terms .termsNmore {
+    flex-direction: column;
+  }
+  footer .cont_redes_legal_terms .termsNmore .address {
+    width: 90%;
+  }
+  footer .cont_redes_legal_terms .termsNmore .other_things {
+    width: 70%;
+    margin-top: 1.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .cont_all nav {
+    display: none;
+  }
+  header .cont_all .hamburguer_menu {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  header .cont_all .hamburguer_menu .material-icons {
+    color: black;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  header .cont_all .hamburguer_menu .material-icons:hover {
+    color: rgba(17, 17, 17, 0.734);
+    transition: all 500ms ease-in-out;
+  }
+  .options_side {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 310px;
+    height: 950px;
+    z-index: 100;
+  }
+  .options_side .closeMenu {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    cursor: pointer;
+  }
+  .options_side a {
+    text-decoration: none;
+  }
+  .options_side a li {
+    list-style: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+    border-radius: 0.3em;
+  }
+  .options_side li {
+    list-style: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+    border-radius: 0.3em;
+  }
+  .options_side .mode_options {
+    position: absolute;
+    top: 820px;
+    right: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 120px;
+  }
+  .options_side .mode_options li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .cont_all .cars_cont {
+    width: 100%;
+  }
+  .main .cont_all .cars_cont .front_card_cont .front_card {
+    border-radius: 0.5em;
+    width: 310px;
+    height: 200px;
+  }
+  .main .cont_all .cars_cont .back_card_cont .back_card {
+    border-radius: 0.5em;
+    width: 310px;
+    height: 200px;
+  }
+  .main .cont_all .cars_cont .back_card_cont .back_card .cont_cuv {
+    top: 90px;
+    right: 38px;
+  }
+  .main .cont_all .inputs_cont {
+    width: 100%;
+  }
+  .main .cont_all .inputs_cont form {
+    width: 100%;
+    height: 90%;
+  }
+  footer .cont_redes_legal_terms .redesNterms {
+    flex-direction: column;
+  }
+  footer .cont_redes_legal_terms .redesNterms .legal {
+    width: 95%;
+  }
+  footer .cont_redes_legal_terms .redesNterms .redes {
+    width: 90%;
+  }
+  footer .cont_redes_legal_terms .termsNmore {
+    flex-direction: column;
+  }
+  footer .cont_redes_legal_terms .termsNmore .address {
+    width: 95%;
+  }
+  footer .cont_redes_legal_terms .termsNmore .other_things {
+    margin-top: 2em;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

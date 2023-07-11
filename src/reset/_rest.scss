@@ -46,6 +46,36 @@
             }
         }
     }
+    .options_side{
+        background-color: $element-ligth;
+        box-shadow: $box-shadow-ligth;
+        .closeMenu{
+            color: $txt-color-ligth;
+            text-shadow: 0px 1px 5px rgba(91, 178, 240, 0.426);
+        }
+        a{
+            color: $txt-color-ligth;
+            li:hover{
+                border: 0px solid $txt-header-ligth;
+                background-color: #0e68cf3c;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+            }
+        }
+        li{
+            color: $txt-color-ligth;
+        }
+        li:hover{
+            border: 0px solid $txt-header-ligth;
+            background-color: #0e68cf3c;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+        }
+        .mode_options{
+            box-shadow: $box-shadow-ligth;
+            li{
+                color: $txt-color-ligth;
+            }
+        }
+    }
 
     //here we have the component...
     /*Aun falta terminar el boton, hacer el responsive y empezar a darle
@@ -252,9 +282,47 @@
                     }
                 }
             }
+            .hamburguer_menu{
+                .material-icons{
+                    //el color se trabaja en el reset...
+                    color: white;
+                }
+                .material-icons:hover{
+                    color: rgba(255, 255, 255, 0.734);
+                }
+            }
         }
     }
-
+    .options_side{
+        background-color: $element-dark;
+        box-shadow: $box-shadow-dark;
+        .closeMenu{
+            color: $txt-color-dark;
+            text-shadow: 0px 1px 5px rgba(240, 235, 91, 0.426);
+        }
+        a{
+            color: $txt-color-dark;
+            li:hover{
+                border: 0px solid $txt-header-dark;
+                background-color: #0e68cf3c;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+            }
+        }
+        li{
+            color: $txt-color-dark;
+        }
+        li:hover{
+            border: 0px solid $txt-header-dark;
+            background-color: #0e68cf3c;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
+        }
+        .mode_options{
+            box-shadow: $box-shadow-dark;
+            li{
+                color: $txt-color-dark;
+            }
+        }
+    }
     //here we have the component...
     /*Aun falta terminar el boton, hacer el responsive y empezar a darle
     funcionalidad a todo con JS...
