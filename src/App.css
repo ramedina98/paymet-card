@@ -57,6 +57,7 @@ to switch dark to ligth and ligth to dark...*/
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
 }
 #Ligth .options_side .mode_options {
+  background-color: white;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #Ligth .options_side .mode_options li {
@@ -211,6 +212,7 @@ to switch dark to ligth and ligth to dark...*/
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.103);
 }
 #Dark .options_side .mode_options {
+  background-color: rgba(11, 11, 11, 0.954);
   box-shadow: 0px 1px 5px rgba(250, 250, 250, 0.26);
 }
 #Dark .options_side .mode_options li {
@@ -983,16 +985,16 @@ footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 310px;
-    height: 950px;
+    height: 100vh;
     z-index: 100;
   }
   .options_side .closeMenu {
     position: absolute;
-    top: 70px;
+    top: 30px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -1025,8 +1027,8 @@ footer .cont_redes_legal_terms .termsNmore .other_things ul li:hover {
   }
   .options_side .mode_options {
     position: absolute;
-    top: 820px;
-    right: 78px;
+    top: 75vh;
+    right: 208px;
     display: flex;
     align-items: center;
     justify-content: center;
