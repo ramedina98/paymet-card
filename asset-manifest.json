@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/paymet-card/static/css/main.dca752e9.css",
+    "main.css": "/paymet-card/static/css/main.bb96c80c.css",
     "main.js": "/paymet-card/static/js/main.02da26f7.js",
     "static/media/fa-solid-900.ttf": "/paymet-card/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/paymet-card/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -16,11 +16,11 @@
     "static/media/fa-v4compatibility.woff2": "/paymet-card/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/paymet-card/index.html",
     "static/media/icon-complete.svg": "/paymet-card/static/media/icon-complete.8fd757c0c5c44b1d597c.svg",
-    "main.dca752e9.css.map": "/paymet-card/static/css/main.dca752e9.css.map",
+    "main.bb96c80c.css.map": "/paymet-card/static/css/main.bb96c80c.css.map",
     "main.02da26f7.js.map": "/paymet-card/static/js/main.02da26f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.dca752e9.css",
+    "static/css/main.bb96c80c.css",
     "static/js/main.02da26f7.js"
   ]
 }
