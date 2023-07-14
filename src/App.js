@@ -89,11 +89,11 @@ function App() {
           <div className='redesNterms'>
             <div className='legal'>
               <p>
-                <span>Jal Bank</span> © 2023 Nu México Financiera S.A. de 
-                C.V., SFP (Nu México) es una entidad financiera 
-                autorizada y supervisada por la Comisión Nacional 
-                Bancaria y de Valores y demás autoridades financieras, 
-                bajo la Ley de Ahorro y Crédito Popular.
+                <span>Jal Bank</span> © 2023 JalBank México Financiera S.A. de C.V., SFP (JalBank Mexico) is a financial institution. 
+                C.V., SFP (JalBank Mexico) is a financial institution authorized and supervised by the National 
+                authorized and supervised by the National Banking and Securities 
+                Banking and Securities Commission and other financial authorities, 
+                under the Savings and Popular Credit Law.
               </p>
             </div>
             <div className='redes'>
@@ -109,15 +109,15 @@ function App() {
           </div>
           <div className='termsNmore'>
             <div className='address'>
-              <p>Nu México Financiera S.A. de C.V. S.F.P. , Ave. 
-                Presidente Masaryk No. 111, Piso 7, Col. Polanco 
+              <p>JalBank México Financiera S.A. de C.V. S.F.P. Ave. 
+                Presidente Masaryk No. 111, 7th Floor, Col. 
                 IV Sección, CP 11550, Miguel Hidalgo, CDMX.
               </p>
             </div>
             <div className='other_things'>
               <ul>
-                <li>Costos y comisiones</li>
-                <li>Contratos</li>
+                <li>Costs and commissions</li>
+                <li>Contracts</li>
               </ul>
             </div>
           </div>
